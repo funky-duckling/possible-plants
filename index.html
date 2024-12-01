@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Plant Picker</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>NZ Native Plant Picker</h1>
+
+<form id="plant-picker-form">
+  <label for="light">Light Conditions</label>
+  <select id="light" name="light">
+    <option value="any" selected>Any</option>
+    <option value="full-sun">Full Sun</option>
+    <option value="partial-shade">Partial Shade</option>
+    <option value="shade">Shade</option>
+  </select>
+
+  <label for="soil">Soil Type</label>
+  <select id="soil" name="soil">
+    <option value="any" selected>Any</option>
+    <option value="sandy">Sandy</option>
+    <option value="loamy">Loamy</option>
+    <option value="clay">Clay</option>
+  </select>
+
+  <label for="moisture">Moisture Needs</label>
+  <select id="moisture" name="moisture">
+    <option value="any" selected>Any</option>
+    <option value="dry">Dry</option>
+    <option value="moderate">Moderate</option>
+    <option value="wet">Wet</option>
+  </select>
+
+  <label for="minSize">Min Size:</label>
+  <input type="number" name="minSize" id="minSize" placeholder="Enter min size" />
+
+  <label for="maxSize">Max Size:</label>
+  <input type="number" name="maxSize" id="maxSize" placeholder="Enter max size" />
+
+  <button type="submit">Find Plants</button>
+</form>
+
+<div id="results">
+  <h2>Matching Plants</h2>
+  <ul id="plant-results"></ul>
+</div>
+    
+</body>
+</html>
